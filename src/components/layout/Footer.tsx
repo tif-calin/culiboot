@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import A from '../A';
+import ExternalLink from '../ExternalLink';
 
 const StyledFooter = styled.footer`
   & a {
@@ -25,7 +25,9 @@ interface Props {};
 const Footer: React.FC<Props> = () => {
   return (
     <StyledFooter>
-      <A href="https://github.com/tif-calin/culiboot/" >steal this</A>
+      <ExternalLink 
+        href="https://github.com/tif-calin/culiboot/"
+      >steal this</ExternalLink>
     </StyledFooter>
   );
 };
