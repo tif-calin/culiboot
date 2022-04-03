@@ -18,7 +18,7 @@ const Page = styled.div`
 
 interface Props {};
 
-const HomePage: React.FC<Props> = () => {
+const HomePage = (_: Props): React.ReactElement => {
   return (
     <Page>
       <h2>Home Page</h2>

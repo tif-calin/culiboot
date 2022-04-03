@@ -9,7 +9,7 @@ interface Props {
   text: string;
 };
 
-const RainbowText: React.FC<Props> = ({ text }) => {
+const RainbowText = ({ text }: Props): React.ReactElement => {
   return (
     <>
       {text.split('').map((char, i) => (
