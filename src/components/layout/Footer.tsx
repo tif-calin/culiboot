@@ -8,6 +8,8 @@ const REPO_URL =
 ;
 
 const StyledFooter = styled.footer`
+  padding: calc(var(--gutter) / 2);
+
   & a {
     margin-top: calc(1rem + 1vh);
     gap: 0.25rem;

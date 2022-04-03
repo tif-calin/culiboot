@@ -3,11 +3,17 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import RainbowText from '../RainbowText';
 
+const SITE = 
+  process.env.REACT_APP_SITE_TITLE
+  || process.env.REACT_APP_NAME
+;
+
 const StyledHeader = styled.header`
-  & h1 {
-    text-align: center;
-    max-width: 100%;
-    font-size: 2.5rem;
+  margin-top: calc(var(--gutter) / 2);
+
+  & .site-title {
+    width: 100%;
+    font-weight: 800;
     filter: saturate(0.55) brightness(0.25);
     transition: all 2s cubic-bezier(0, 0.9, 0.8, 0.99);
 
@@ -22,7 +28,11 @@ interface Props {};
 const Header: React.FC<Props> = () => {
   return (
     <StyledHeader>
-      <Link to="/"><h1><RainbowText text="Culi Boot" /></h1></Link>
+      {SITE && (
+        <Link to="/">
+          <span className="site-title"><RainbowText text={SITE} /></span>
+        </Link>
+      )}
     </StyledHeader>
   );
 };

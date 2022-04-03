@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Header from './Header';
 
 const StyledLayout = styled.div`
-  --padding: 1rem;
+  --gutter: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -28,7 +28,6 @@ const StyledLayout = styled.div`
   }
 
   & > :is(header, footer) {
-    padding: var(--padding);
     flex-grow: 0;
 
     & > * {
@@ -42,10 +41,7 @@ const StyledLayout = styled.div`
     flex-grow: 1;
     height: 100%;
 
-    & > * { 
-      padding: var(--padding);
-      flex-grow: 1;
-    }
+    & > * { flex-grow: 1; }
   }
 `;
 
