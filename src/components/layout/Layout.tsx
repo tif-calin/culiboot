@@ -49,16 +49,19 @@ const StyledLayout = styled.div`
   }
 `;
 
-interface Props {};
+interface Props {
+  path?: string;
+  children: React.ReactNode;
+};
 
-const Layout: React.FC<Props> = ({ children }) => {
+const Layout = ({ path, children }: Props): React.ReactElement => {
   return (
     <StyledLayout>
       <Header />
       <main>
         {children}
       </main>
-      <Footer />
+      <Footer path={path} />
     </StyledLayout>
   );
 };

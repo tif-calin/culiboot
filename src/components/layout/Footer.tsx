@@ -2,6 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import ExternalLink from '../ExternalLink';
 
+const REPO_URL = 
+  process.env.REACT_APP_REPO_URL
+  || 'https://github.com/tif-calin/culiboot'
+;
+
 const StyledFooter = styled.footer`
   & a {
     margin-top: calc(1rem + 1vh);
@@ -20,13 +25,15 @@ const StyledFooter = styled.footer`
   }
 `;
 
-interface Props {};
+interface Props {
+  path?: string;
+};
 
-const Footer: React.FC<Props> = () => {
+const Footer= ({ path }: Props): React.ReactElement => {
   return (
     <StyledFooter>
       <ExternalLink 
-        href="https://github.com/tif-calin/culiboot/"
+        href={path ? `${REPO_URL}/tree/main/${path}` : REPO_URL}
       >steal this</ExternalLink>
     </StyledFooter>
   );
