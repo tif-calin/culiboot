@@ -8,7 +8,7 @@ const Page = styled.div`
   gap: calc(var(--gutter) / 2);
 
   & > .content {
-    background-color: #fbfbfb;
+    background-color: var(--oc-gray-0);
     flex-grow: 1;
     padding: 1.5rem;
     border-radius: 0.25rem;
