@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './components/layout';
 import './styles/index.css';
@@ -25,10 +25,7 @@ const App = () => {
   );
 };
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
+const rootElement = document.getElementById('root');
+if (!rootElement) throw new Error('Root container missing in index.html');
+const root = ReactDOM.createRoot(rootElement);
+root.render(<React.StrictMode><App /></React.StrictMode>);
