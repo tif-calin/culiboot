@@ -1,9 +1,32 @@
+/*** ===================== */
+/** === ATOMIC TOKENS === **/
+/* ===================== ***/
 :root {
+  /* Font Tokens (https://modernfontstacks.com/) */
   --font-transitional: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   --font-humanist: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
   --font-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 
-  /* palette generator */
+  /* Color Tokens (https://yeun.github.io/open-color/) */
+  --color-white: #f8fafb;
+  --color-offwhite: #f2f4f6;
+  --color-black: #121210;
+  --color-offblack: #252521;
+
+  --oc-red-4: #ff8787;
+  --oc-pink-4: #f783ac;
+  --oc-grape-4: #da77f2;
+  --oc-violet-4: #9775fa;
+  --oc-indigo-4: #748ffc;
+  --oc-blue-4: #4dabf7;
+  --oc-cyan-4: #3bc9db;
+  --oc-teal-4: #38d9a9;
+  --oc-green-4: #69db7c;
+  --oc-lime-4: #a9e34b;
+  --oc-yellow-4: #ffd43b;
+  --oc-orange-4: #ffa94d;
+
+  /* Shadow tokens https://www.joshwcomeau.com/shadow-palette/ */
   --shadow-color: 0deg 0% 75%;
   --shadow-elevation-low:
     0.2px 0.5px 0.6px hsl(var(--shadow-color) / 0.18),
@@ -45,4 +68,18 @@
     inset 10.5px 21px 28.2px -1.7px hsl(var(--shadow-color) / 0.27),
     inset 16.2px 32.5px 43.6px -2px hsl(var(--shadow-color) / 0.28)
   ;
+}
+
+/*** ======================= */
+/** === SEMANTIC TOKENS === **/
+/* ======================= ***/
+:root {
+  --clr-bg: var(--color-offwhite);
+  --clr-fg: var(--color-white);
+  --clr-txt: var(--color-offblack);
+  --clr-line: var(--color-black);
+
+  --fnt-sans: var(--font-humanist);
+  --fnt-serif: var(--font-transitional);
+  --fnt-mono: var(--font-code);
 }
