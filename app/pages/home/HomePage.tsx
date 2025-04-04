@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import { styled } from "@linaria/react";
 
 const Page = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ const Page = styled.div`
   }
 `;
 
-interface Props {};
+type Props = {};
 
 const HomePage = (_: Props): React.ReactElement => {
   return (

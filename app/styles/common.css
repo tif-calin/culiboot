@@ -1,4 +1,9 @@
 :root {
+  --font-transitional: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  --font-humanist: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  --font-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
+  /* palette generator */
   --shadow-color: 0deg 0% 75%;
   --shadow-elevation-low:
     0.2px 0.5px 0.6px hsl(var(--shadow-color) / 0.18),
@@ -10,7 +15,7 @@
     0.8px 1.6px 2.1px -0.7px hsl(var(--shadow-color) / 0.21),
     1.8px 3.6px 4.8px -1.3px hsl(var(--shadow-color) / 0.23),
     4.1px 8.2px 11px -2px hsl(var(--shadow-color) / 0.25)
-  ;  
+  ;
   --shadow-elevation-high:
     0.2px 0.5px 0.6px hsl(var(--shadow-color) / 0.2),
     1.3px 2.6px 3.5px -0.3px hsl(var(--shadow-color) / 0.21),
@@ -30,7 +35,7 @@
     inset 0.8px 1.6px 2.1px -0.7px hsl(var(--shadow-color) / 0.21),
     inset 1.8px 3.6px 4.8px -1.3px hsl(var(--shadow-color) / 0.23),
     inset 4.1px 8.2px 11px -2px hsl(var(--shadow-color) / 0.25)
-  ;  
+  ;
   --shadow-inset-high:
     inset 0.2px 0.5px 0.6px hsl(var(--shadow-color) / 0.2),
     inset 1.3px 2.6px 3.5px -0.3px hsl(var(--shadow-color) / 0.21),

@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.rulers": [100],
   "editor.tabSize": 2,
   "files.associations": { ".env.example": "properties" },

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import { styled } from "@linaria/react";
 import RainbowText from '../RainbowText';
+import { Link } from 'react-router';
 
-const SITE = 
+const SITE =
   process.env.REACT_APP_SITE_TITLE
   || process.env.REACT_APP_NAME
 ;
