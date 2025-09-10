@@ -27,14 +27,6 @@ const Page = styled.div`
     --shadow-color: 0deg 0% 80%;
     box-shadow: var(--shadow-inset-medium), inset 0 0 2px hsl(var(--shadow-color));
   }
-
-  & > .content {
-    flex-grow: 1;
-    padding: 1.5rem;
-    border-radius: 0.25rem;
-    --shadow-color: 0deg 0% 80%;
-    box-shadow: var(--shadow-inset-medium), inset 0 0 2px hsl(var(--shadow-color));
-  }
 `;
 
 type Props = {};

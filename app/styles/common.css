@@ -25,6 +25,20 @@
   --oc-lime-4: #a9e34b;
   --oc-yellow-4: #ffd43b;
   --oc-orange-4: #ffa94d;
+}
+
+/*** ======================= */
+/** === SEMANTIC TOKENS === **/
+/* ======================= ***/
+:root {
+  --clr-bg: var(--color-offwhite);
+  --clr-fg: var(--color-white);
+  --clr-txt: var(--color-offblack);
+  --clr-line: var(--color-black);
+
+  --fnt-sans: var(--font-humanist);
+  --fnt-serif: var(--font-transitional);
+  --fnt-mono: var(--font-code);
 
   /* Shadow tokens https://www.joshwcomeau.com/shadow-palette/ */
   --shadow-color: 0deg 0% 75%;
@@ -68,18 +82,4 @@
     inset 10.5px 21px 28.2px -1.7px hsl(var(--shadow-color) / 0.27),
     inset 16.2px 32.5px 43.6px -2px hsl(var(--shadow-color) / 0.28)
   ;
-}
-
-/*** ======================= */
-/** === SEMANTIC TOKENS === **/
-/* ======================= ***/
-:root {
-  --clr-bg: var(--color-offwhite);
-  --clr-fg: var(--color-white);
-  --clr-txt: var(--color-offblack);
-  --clr-line: var(--color-black);
-
-  --fnt-sans: var(--font-humanist);
-  --fnt-serif: var(--font-transitional);
-  --fnt-mono: var(--font-code);
 }
