@@ -1,4 +1,5 @@
 {
+  "// TODO(boot):": "Choose name, short_name, and colors. See: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json",
   "short_name": "CuliBoot",
   "name": "CuliBoot | Culi Goto Boot Proj",
   "icons": [
