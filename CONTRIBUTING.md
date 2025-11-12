@@ -1,3 +1,4 @@
+<!-- TODO(boot): add contributer guidelines https://mozillascience.github.io/working-open-workshop/contributing/ -->
 
 ## git commits
 
