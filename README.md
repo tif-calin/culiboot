@@ -4,7 +4,12 @@ Culi's goto bootstrap web project using [vite](https://vite.dev/guide/), [react]
 ## Setup
 After cloning the repo and installing the deps, search the codebase for `TODO(boot)` setup tasks.
 
-See also, [frontendchecklist.io](https://frontendchecklist.io/). Considering adding files like [.editorconfig](https://editorconfig.org), [humans.txt](https://humanstxt.org/), [CONTRIBUTING.md](https://mozillascience.github.io/working-open-workshop/contributing/), and utilizing [open-prop](https://open-props.style/) CSS variables.
+See also, [frontendchecklist.io](https://frontendchecklist.io/) and [isitagentready.com](https://isitagentready.com/). Consider utilizing [open-prop](https://open-props.style/) CSS variables and adopting standard files like:
+
+- [.editorconfig](https://editorconfig.org)
+- [humans.txt](https://humanstxt.org/) ([e.g.](https://swwweet.com/humans.txt))
+- [CONTRIBUTING.md](https://mozillascience.github.io/working-open-workshop/contributing/)
+- [security.txt](https://securitytxt.org/) ([e.g.](https://curl.se/.well-known/security.txt))
 
 ## Development
 ```
@@ -12,5 +17,5 @@ git clone git@github.com:tif-calin/culiboot.git
 cd culiboot
 cp .env.example .env
 pnpm i
-pnpm start
+pnpm dev
 ```
