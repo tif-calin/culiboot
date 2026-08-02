@@ -23,7 +23,7 @@ export default tseslint.config(
         "error",
         { argsIgnorePattern: "^_", caughtErrorsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
-      printWidth: "warn",
+      'max-len': ["warn", { code: 100 }],
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
     },
   }
