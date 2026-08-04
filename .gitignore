@@ -13,6 +13,7 @@
 dist
 dist-ssr
 tsconfig.tsbuildinfo
+.react-router
 
 # env
 .env
