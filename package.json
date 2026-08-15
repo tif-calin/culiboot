@@ -1,4 +1,5 @@
 {
+  "// TODO(boot)": "update name, url, and version",
   "name": "culiboot",
   "url": "https://github.com/tif-calin/culiboot",
   "version": "0.2.2",

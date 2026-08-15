@@ -8,6 +8,12 @@ import {
   ScrollRestoration,
 } from "react-router";
 import type { Route } from "./+types/root";
+import SITE from "./config/site";
+
+export const meta: Route.MetaFunction = () => [
+  { title: SITE.title },
+  { name: "description", content: SITE.description },
+];
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -15,8 +21,6 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="TODO(boot): description" />
-        <title>TODO(boot): culiboot</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo192.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
