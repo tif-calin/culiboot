@@ -1,5 +1,12 @@
-import './styles/index.css';
-import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
+import "./styles/index.css";
+import {
+  isRouteErrorResponse,
+  Links,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+} from "react-router";
 import type { Route } from "./+types/root";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -8,6 +15,11 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="TODO(boot): description" />
+        <title>TODO(boot): culiboot</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
         <Meta />
         <Links />
       </head>
@@ -18,7 +30,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       </body>
     </html>
   );
-}
+};
 
 export const ErrorBoundary = ({ error }: Route.ErrorBoundaryProps) => {
   let message = "Oops!";
@@ -47,7 +59,7 @@ export const ErrorBoundary = ({ error }: Route.ErrorBoundaryProps) => {
       )}
     </main>
   );
-}
+};
 
 const App = () => {
   return <Outlet />;
