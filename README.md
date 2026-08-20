@@ -11,6 +11,9 @@ See also, [frontendchecklist.io](https://frontendchecklist.io/) and [isitagentre
 - [CONTRIBUTING.md](https://mozillascience.github.io/working-open-workshop/contributing/)
 - [security.txt](https://securitytxt.org/) ([e.g.](https://curl.se/.well-known/security.txt))
 
+> [!NOTE]:
+> If you want to use this with SSR: flip `ssr: true` in `react-router.config.ts`, add a start script in `package.json` like `"start": "react-router-serve ./build/server/index.js"`, and note that the current `preview` script will no longer exercise the real app. If not, you may remove `@react-router/node` and `@react-router/serve`. `isbot` is only necessary if you add a custom `app/entry.server.tsx` for streaming or handling bots.
+
 ## Development
 ```
 git clone git@github.com:tif-calin/culiboot.git
